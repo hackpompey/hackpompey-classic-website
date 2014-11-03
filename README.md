@@ -1,4 +1,4 @@
-![hackpompey logo](http://hackpompey.co.uk/img/logo/logo-colour-inline.svg)
+![hackpompey logo](http://rosedigital.github.io/hackpompey/img/logo/logo-colour-inline.svg)
 hackpompey
 ==========
 
