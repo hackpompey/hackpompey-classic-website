@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+.bg{
+    z-index: -1;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: .05;
+}
+
 body{
     width: 100%;
     height: 100%;
@@ -11,7 +22,7 @@ body{
     font-family: monospace;
     overflow-x: hidden;
 
-    background: linear-gradient(
+    background-image: linear-gradient(
 
         to right,
 
@@ -40,22 +51,25 @@ body{
     100%{ background-position: 100% 0% }
 }
 
-body:hover{
+body.glitch{
     background-size: -10% -10%;
     animation: none;
 }
 
-body:hover aside,
-body:hover main{
-    background: rgba(0, 0, 0, .25);
+body.glitch aside,
+body.glitch main{
+    background: rgba(0, 0, 0, .85);
+    animation: none;
+    color: white;
 }
-
 
 header{
     width: 100%;
 }
 
-a{
+a,
+a:visited,
+a:active{
     color: color: hsl(  0, 50%, 50%);
     animation: colourChange 30s infinite alternate;
 }
@@ -214,8 +228,32 @@ aside section{
 }
 
 main{
+    padding: 1em;
+    margin-top: 5em;
+
+    background: rgba(0,0,0,.25);
+
     transform: rotate(-2.5deg) translateX(2.5%);
     animation: mainIn 1s forwards cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+main p,
+main li{
+    margin-bottom: .25em;
+    line-height: 1.25em;
+    max-width: 45em;
+}
+
+main:first-child{
+    margin-top: 0;
+}
+
+main:nth-child(odd){
+    transform: rotate(-2.5deg) translateX(2.5%);
+}
+
+main:nth-child(even){
+    transform: rotate(2.5deg) translateX(2.5%);
 }
 
 @keyframes mainIn{
@@ -290,23 +328,28 @@ footer p a{
 }
 
 .hack{
-    list-style: none;
     padding: 1em;
+    margin: 0;
+    max-width: 100%;
+
+    overflow: hidden; /* clearfix */
+    list-style: none;
 }
 
-.hack h3{
-  height: 50px;
-  width: 100%;
+.hack__logo{
+    height: 50px;
+    float: left;
+    width: 50%;
 
-  text-indent: -9999px;
+    text-indent: -9999px;
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% center;
 }
 
-.hack:first-of-type h3{
-    height: 100px;
+.hack:first-of-type .hack__logo{
+    height: 90px;
 }
 
 .hack--fashion{
@@ -314,7 +357,7 @@ footer p a{
     color: whiteSmoke;
 }
 
-.hack--fashion h3{
+.hack--fashion .hack__logo{
     background-image: url(../img/logo/logo-white-inline.svg);
 }
 
@@ -323,7 +366,7 @@ footer p a{
     color: black;
 }
 
-.hack--3 h3{
+.hack--3 .hack__logo{
     background-image: url(../img/logo/old/hackpompey--3.png);
 }
 
@@ -332,7 +375,7 @@ footer p a{
     color: black;
 }
 
-.hack--open-data h3{
+.hack--open-data .hack__logo{
     background-image: url(../img/logo/old/hackpompey--open-data.png);
 }
 
@@ -341,7 +384,7 @@ footer p a{
     color: #333;
 }
 
-.hack--1 h3{
+.hack--1 .hack__logo{
     background-image: url(../img/logo/old/hackpompey--1.png);
 }
 
@@ -421,7 +464,6 @@ footer p a{
 .instagram-item:hover .instagram-item__caption{
     opacity: 1;
 }
-
 
 @media (min-width: 600px){
 
