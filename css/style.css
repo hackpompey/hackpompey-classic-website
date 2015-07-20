@@ -1,0 +1,457 @@
+*::before, *, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+    font-family: monospace;
+    overflow-x: hidden;
+
+    background: linear-gradient(
+
+        to right,
+
+        hsl( 28, 64%, 59%),
+        hsl(331, 42%, 44%),
+        hsl(349, 65%, 59%),
+        hsl( 28, 64%, 59%),
+        hsl(187, 80%, 37%),
+        hsl( 63, 59%, 56%),
+        hsl(  5, 74%, 37%),
+        hsl(331, 42%, 44%),
+        hsl( 28, 64%, 59%)
+
+    );
+
+    background-size: 900% 100%;
+    background-position: 0% 0%;
+
+    color: white;
+
+    animation: backgroundChange 30s infinite linear;
+}
+
+@keyframes backgroundChange{
+      0%{ background-position:   0% 0% }
+    100%{ background-position: 100% 0% }
+}
+
+body:hover{
+    background-size: -10% -10%;
+    animation: none;
+}
+
+body:hover aside,
+body:hover main{
+    background: rgba(0, 0, 0, .25);
+}
+
+
+header{
+    width: 100%;
+}
+
+a{
+    color: color: hsl(  0, 50%, 50%);
+    animation: colourChange 30s infinite alternate;
+}
+
+@keyframes colourChange{
+      0%{ color: hsl(  0, 50%, 50%); }
+     25%{ color: hsl( 90, 50%, 50%); }
+     50%{ color: hsl(180, 50%, 50%); }
+     75%{ color: hsl(270, 50%, 50%); }
+    100%{ color: hsl(360, 50%, 50%); }
+}
+
+.logo{
+    display: block;
+
+    animation: hackpompeyGlitch 1s 2 alternate;
+}
+
+@keyframes hackpompeyGlitch{
+     0%{ opacity: 0; transform: translate(5px, -2px); }
+    11%{ opacity: 1; transform: translate(5px, -2px); }
+    22%{ opacity: 0; transform: translate(-5px, 2px); }
+    33%{ opacity: 1; transform: translate(-5px, 0px); }
+}
+
+.logo__hack{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo__hack > path{
+    fill: rgba(255,255,255,.95);
+
+    animation: hackGlitch .25s ease-in-out 1 alternate;
+}
+
+.logo__hack__h{ animation-delay:    3s; }
+.logo__hack__a{ animation-delay:  1.5s; }
+.logo__hack__c{ animation-delay:  .75s; }
+.logo__hack__k{ animation-delay: 2.25s; }
+
+@keyframes hackGlitch{
+     0%{ fill: hsl(  0, 0%, 60%); }
+    11%{ fill: hsl( 90, 0%, 60%); }
+    22%{ fill: hsl(180, 0%, 60%); transform: translate(2.5%, -2.5%); }
+    33%{ fill: hsl(270, 0%, 60%); }
+    44%{ fill: hsl(360, 0%, 100%); }
+}
+
+.logo__pompey > path{
+    fill: none;
+
+    stroke: rgba(255,255,255,.95);
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-opacity: 1;
+
+    animation: drawLine 2.5s linear forwards;
+}
+
+.logo__pompey__p{
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+
+    animation-duration: .5s;
+    animation-delay: 0s;
+}
+
+.logo__pompey__om{
+    stroke-dasharray: 560;
+    stroke-dashoffset: 560;
+
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+
+.logo__pompey__pey{
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+
+    animation-duration: 1.75s;
+    animation-delay: 1.5s;
+}
+
+.logo__pompey__tail{
+    stroke-dasharray: 110;
+    stroke-dashoffset: 110;
+
+    animation-duration: .25s;
+    animation-delay: 3.25s;
+}
+
+@keyframes drawLine{
+    to{ stroke-dashoffset: 0; }
+}
+
+aside,
+main{
+    position: relative;
+}
+
+aside{
+    overflow: hidden;
+}
+
+aside a{
+    color: white;
+    animation: none;
+}
+
+@media (min-width: 600px){
+
+    aside{
+        position: fixed;
+        top: 0; left: 0; bottom: 0;
+        width: 20%;
+    }
+
+    main{
+        float: right;
+        width: 55%;
+    }
+
+    footer{
+        position: fixed;
+        right: 0; bottom: 0;
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1000px){
+
+    aside{
+        width: 10%;
+    }
+
+    main{
+        width: 67.5%;
+    }
+
+    footer{
+        width: 30%;
+    }
+
+}
+
+aside section{
+    padding: 1em;
+
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    font-size: .85em;
+}
+
+main{
+    transform: rotate(-2.5deg) translateX(2.5%);
+    animation: mainIn 1s forwards cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+@keyframes mainIn{
+    0%, 75%{
+        transform: translateX(100%);
+    }
+}
+
+footer{
+    padding: .5em 1.75em;
+
+    color: white;
+
+    background: black;
+}
+
+@media (min-width: 600px){
+
+    footer{
+        opacity: .25;
+    }
+
+    footer:hover{
+        opacity: 1;
+    }
+
+}
+
+footer p{
+    margin: 0 0 .25em;
+
+    font-size: .75em;
+    text-align: right;
+}
+
+footer p a{
+    color: white;
+    font-weight: bolder;
+}
+
+.tagline{
+    width: 100%;
+    padding: .5em 1.5em;
+    padding-left: 2.5em;
+    background: rgba(0,0,0,.5);
+
+    color: white;
+    font-size: .85em;
+    text-align: center;
+
+    transform: rotate(-2.5deg) translateX(-15%);
+
+    animation: taglineIn 1s forwards cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+@keyframes taglineIn{
+    0%, 25%{
+        transform: translateX(-100%);
+    }
+}
+
+.hack-list{
+    margin: 0;
+    padding: 0;
+}
+
+.hack-list__heading{
+    display: block;
+    padding: 1em;
+
+    text-transform: uppercase;
+}
+
+.hack{
+    list-style: none;
+    padding: 1em;
+}
+
+.hack h3{
+  height: 50px;
+  width: 100%;
+
+  text-indent: -9999px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% center;
+}
+
+.hack:first-of-type h3{
+    height: 100px;
+}
+
+.hack--fashion{
+    background: black;
+    color: whiteSmoke;
+}
+
+.hack--fashion h3{
+    background-image: url(../img/logo/logo-white-inline.svg);
+}
+
+.hack--3{
+    background: whiteSmoke;
+    color: black;
+}
+
+.hack--3 h3{
+    background-image: url(../img/logo/old/hackpompey--3.png);
+}
+
+.hack--open-data{
+    background: #CAE2EF;
+    color: black;
+}
+
+.hack--open-data h3{
+    background-image: url(../img/logo/old/hackpompey--open-data.png);
+}
+
+.hack--1{
+    background: #fef7ba;
+    color: #333;
+}
+
+.hack--1 h3{
+    background-image: url(../img/logo/old/hackpompey--1.png);
+}
+
+.social-links{
+    padding: 0;
+
+    list-style: none;
+}
+
+.social-links li a{
+    display: block;
+    padding: .5em 0;
+
+    color: rgba(255, 255, 255, .5);
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.social-links li a:hover{
+    color: white;
+}
+
+#instafeed{
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: initial;
+
+    animation: instagramFeedIn 1s forwards cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+@keyframes instagramFeedIn{
+    0%, 50%{
+        transform: rotate(2.5deg) translateY(100%);
+    }
+}
+
+.instagram-item{
+    position: relative;
+    display: inline-block;
+    width: 25%;
+
+    transition: opacity .25s;
+}
+
+.instagram-item__image{
+    display: block;
+    width: 100%;
+}
+
+.instagram-item__caption{
+    z-index: 10;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    overflow: hidden;
+    padding: .5em;
+
+    font-size: .95em;
+    color: white;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    opacity: 0;
+
+    transition: opacity .25s;
+}
+
+.instagram-item:hover .instagram-item__image{
+    opacity: .25;
+}
+
+.instagram-item:hover .instagram-item__caption{
+    opacity: 1;
+}
+
+
+@media (min-width: 600px){
+
+    #instafeed{
+        position: fixed;
+        top: 0; left: 20%; bottom: 0;
+        width: 20%;
+
+        /* scroll bar */
+        overflow-x: initial;
+        overflow-y: scroll;
+        white-space: normal;
+    }
+
+    .instagram-item{
+        float: right;
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1000px){
+
+    #instafeed{
+        left: 10%;
+    }
+
+    .instagram-item{
+        width: 50%;
+    }
+
+}
