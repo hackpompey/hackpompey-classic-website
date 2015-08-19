@@ -360,7 +360,7 @@ main > section p{
     overflow: hidden;
     border-radius: 10px;
 
-    transform: rotate(-2.5deg) translate(5%, -5%);
+    transform: translateX(5%);
 }
 
 .hack-list__heading{
