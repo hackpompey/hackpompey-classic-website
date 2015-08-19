@@ -113,15 +113,6 @@ header{
     font-weight: 600;
 }
 
-.call-to-action::after{
-    content: '';
-    display: block;
-    height: 5px;
-
-    background: currentColor;
-    border-radius: 5px;
-}
-
 .call-to-action::before{
     position: absolute;
     top: -1em; right: -2em;
