@@ -232,20 +232,16 @@ header .logo{
 .logo__hack > path{
     fill: rgba(255,255,255,.85);
 
-    animation: hackGlitch .25s ease-in-out 1 alternate;
+    animation: hackGlitch 5s ease-in infinite alternate;
 }
 
-.logo__hack > .logo__hack__h{ animation-delay:  .25s; }
-.logo__hack > .logo__hack__a{ animation-delay:    1s; }
-.logo__hack > .logo__hack__c{ animation-delay:   .5s; }
-.logo__hack > .logo__hack__k{ animation-delay:  1.5s; }
+.logo__hack > .logo__hack__h{ animation-delay: -.33s; }
+.logo__hack > .logo__hack__a{ animation-delay: -.66s; }
+.logo__hack > .logo__hack__c{ animation-delay: -.99s; }
+.logo__hack > .logo__hack__k{ animation-delay: -1.33s; }
 
 @keyframes hackGlitch{
-     0%{ fill: hsl(  0, 0%, 60%); }
-    11%{ fill: hsl( 90, 0%, 60%); }
-    22%{ fill: hsl(180, 0%, 60%); transform: translate(2.5%, -2.5%); }
-    33%{ fill: hsl(270, 0%, 60%); }
-    44%{ fill: hsl(360, 0%, 100%); }
+     50%{ transform: translateY(-2.5%); }
 }
 
 .logo__pompey > path{
