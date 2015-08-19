@@ -113,7 +113,7 @@ header{
     font-weight: 600;
 }
 
-.call-to-action::before{
+.call-to-action--tickets::before{
     position: absolute;
     top: -1em; right: -2em;
     content: 'Free!';
