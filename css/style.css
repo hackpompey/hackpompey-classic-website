@@ -350,6 +350,14 @@ main > section li,
 main > section p{
     max-width: 35em;
     margin-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+main > section h1,
+main > section h2,
+main > section h3{
+    margin-top: 2em;
+    margin-bottom: .5em;
 }
 
 main > section ul{
