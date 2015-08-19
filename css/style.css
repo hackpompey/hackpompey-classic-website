@@ -235,10 +235,10 @@ header .logo{
     animation: hackGlitch .25s ease-in-out 1 alternate;
 }
 
-.logo__hack__h{ animation-delay:    3s; }
-.logo__hack__a{ animation-delay:  1.5s; }
-.logo__hack__c{ animation-delay:  .75s; }
-.logo__hack__k{ animation-delay: 2.25s; }
+.logo__hack > .logo__hack__h{ animation-delay:  .25s; }
+.logo__hack > .logo__hack__a{ animation-delay:    1s; }
+.logo__hack > .logo__hack__c{ animation-delay:   .5s; }
+.logo__hack > .logo__hack__k{ animation-delay:  1.5s; }
 
 @keyframes hackGlitch{
      0%{ fill: hsl(  0, 0%, 60%); }
@@ -261,36 +261,36 @@ header .logo{
     animation: drawLine 2.5s linear forwards;
 }
 
-.logo__pompey__p{
+.logo__pompey > .logo__pompey__p{
     stroke-dasharray: 180;
     stroke-dashoffset: 180;
 
-    animation-duration: .5s;
+    animation-duration: 0.33s;
     animation-delay: 0s;
 }
 
-.logo__pompey__om{
+.logo__pompey > .logo__pompey__om{
     stroke-dasharray: 560;
     stroke-dashoffset: 560;
 
-    animation-duration: 1s;
-    animation-delay: .5s;
+    animation-duration: 0.66s;
+    animation-delay: 0.33s;
 }
 
-.logo__pompey__pey{
+.logo__pompey > .logo__pompey__pey{
     stroke-dasharray: 900;
     stroke-dashoffset: 900;
 
-    animation-duration: 1.75s;
-    animation-delay: 1.5s;
+    animation-duration: 1.16s;
+    animation-delay: 0.99s;
 }
 
-.logo__pompey__tail{
+.logo__pompey > .logo__pompey__tail{
     stroke-dasharray: 110;
     stroke-dashoffset: 110;
 
-    animation-duration: .25s;
-    animation-delay: 3.25s;
+    animation-duration: 0.17s;
+    animation-delay: 2.15s;
 }
 
 @keyframes drawLine{
