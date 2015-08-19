@@ -27,7 +27,7 @@ h1, h2, h3{
 a,
 a:visited,
 a:active{
-    color: hsl(241, 50%, 50%);
+    color: hsl(200, 50%, 50%);
     text-decoration: none;
     font-weight: bolder;
 
