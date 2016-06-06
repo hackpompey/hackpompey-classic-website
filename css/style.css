@@ -231,18 +231,12 @@ header .logo{
 
 .logo__hack > path{
     fill: rgba(255,255,255,.85);
-
-    animation: hackGlitch 5s ease-in infinite alternate;
 }
 
 .logo__hack > .logo__hack__h{ animation-delay: -.33s; }
 .logo__hack > .logo__hack__a{ animation-delay: -.66s; }
 .logo__hack > .logo__hack__c{ animation-delay: -.99s; }
 .logo__hack > .logo__hack__k{ animation-delay: -1.33s; }
-
-@keyframes hackGlitch{
-     50%{ transform: translateY(-2.5%); }
-}
 
 .logo__pompey > path{
     fill: none;
