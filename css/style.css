@@ -55,7 +55,8 @@ a:hover{
 }
 
 .wrapper{
-  background-color: rgba(31, 21, 49, .85);
+  background-color: red;
+  /*background-color: rgba(31, 21, 49, .85);*/
 }
 
 .info,
