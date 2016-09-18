@@ -405,6 +405,8 @@ main > section p{
 .hack--current .countdown {
   width: 195px;
   text-align: center;
+  padding-top: 3rem;
+  margin-right: 3rem;
 }
 
 .hack-body div {
