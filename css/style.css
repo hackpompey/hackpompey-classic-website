@@ -402,6 +402,11 @@ main > section p{
   justify-content: flex-start;
 }
 
+.hack--current .countdown {
+  width: 195px;
+  text-align: center;
+}
+
 .hack-body div {
   flex: 1;
   display: flex;
@@ -563,6 +568,18 @@ footer p a:hover{
 
   .hack{
     padding: 1em 2em;
+  }
+
+  .hack--current {
+    flex-flow: column-reverse nowrap;
+  }
+
+  .hack--current .countdown {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 1rem;
   }
 
 }
