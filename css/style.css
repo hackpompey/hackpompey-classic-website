@@ -582,6 +582,8 @@ footer p a:hover{
     flex-flow: column;
     align-items: center;
     margin-top: 1rem;
+    padding-top: 0;
+    margin-right: 0;
   }
 
 }
