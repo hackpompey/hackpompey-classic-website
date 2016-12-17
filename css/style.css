@@ -49,13 +49,16 @@ a:hover{
 }
 
 .row{
-  max-width: 1400px;
-  margin: 0 auto;
   overflow: hidden;
 }
 
-.wrapper{
+.container{
   background-color: rgba(31, 21, 49, .85);
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .info,
@@ -142,6 +145,7 @@ header{
 .info{
   position: relative;
   width: 40%;
+  max-width: 700px;
 
   color: white;
 
@@ -214,6 +218,7 @@ header .logo{
   display: block;
 
   animation: hackpompeyIn 1.5s forwards;
+  transform: translateZ(0); /* force onto the gpu layer for performance */
 }
 
 @keyframes hackpompeyIn{
@@ -530,6 +535,10 @@ footer p a:hover{
     font-size: 2em;
   }
 
+  .hack-desc{
+    float: none;
+  }
+
   .call-to-action{
     display: block;
     text-align: center;
@@ -548,10 +557,12 @@ footer p a:hover{
   .hack__logo,
   .hack__details{
     width: 100%;
+    text-align: left;
+    padding: 1em 0 0;
   }
 
   .hack{
-    padding: 1em 2em;
+    padding: 1.5em 2em;
   }
 
   .hack--current {
