@@ -365,7 +365,6 @@ main > section p{
 
 .hack{
   padding: 1em 2em;
-  padding-right: 6em;
   margin: 0;
 
   overflow: hidden; /* clearfix */
@@ -388,41 +387,21 @@ main > section p{
   height: 90px;
 }
 
-.hack--current {
-  display: -webkit-flex;
-  display: flex;
-  justify-content: flex-start;
+.hack--6 {
+  color: white;
+  background-color: #364596;
+  background-image: linear-gradient(to bottom right, #d0418f, #364596);
 }
 
-.hack--current .hack-body {
-  padding-left: 1em;
-  position: relative;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-}
-
-.hack--current .countdown {
-  width: 195px;
-  min-width: 195px;
-  text-align: center;
-  padding-top: 3rem;
-  margin-right: 3rem;
-}
-
-.hack-body div {
-  flex: 1;
-  display: -webkit-flex;
-  display: flex;
-  justify-content:center;
-  align-items: center;
+.hack--6 .hack__logo{
+  background-image: url(../img/logo/old/hackpompey--6.png);
+  background-image: url(../img/logo/old/hackpompey--6.svg), none;
 }
 
 .hack--wearables{
   color: whiteSmoke;
   background-color: rgba(255, 255, 255, .85);
-  background: linear-gradient(to bottom, rgba(101,155,212,0.85), rgba(0,255,186,0.85));
+  background-image: linear-gradient(to bottom, rgba(101,155,212,0.85), rgba(0,255,186,0.85));
 }
 
 .hack--wearables .hack__logo{
