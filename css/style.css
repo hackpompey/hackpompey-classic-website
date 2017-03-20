@@ -53,7 +53,7 @@ a:hover{
 }
 
 .container{
-  background-color: rgba(31, 21, 49, .85);
+  background-color: rgba(0, 0, 0, .9);
 }
 
 .wrapper {
@@ -505,6 +505,38 @@ footer p a:hover{
   font-weight: bolder;
 }
 
+/* Current Hack Style Updates */
+header.hp7 {
+    background-image: linear-gradient(
+        to bottom right,
+        hsla(160, 100%, 54%, .5),
+        hsla(194, 100%, 54%, .5),
+        hsla(165, 100%, 60%, .5),
+        hsla(187, 80%, 37%, .5)
+    );
+    background-size: 400% 400%;
+}
+.hack--current {
+    background-image: linear-gradient(
+        to bottom right,
+        hsla(165, 100%, 60%, .05),
+        hsla(0, 100%, 100%, .05)
+    );
+    border-top: 1px solid hsla(165, 100%, 60%, 1);
+    border-bottom: 1px solid hsla(165, 100%, 60%, 1);
+}
+.hack--current .hack-body object {
+    opacity: 0.85;
+}
+.hack--current .hack-body p {
+    width: 100%;
+    max-width: 100%;
+}
+.hack--current .hack-body a.hp7-aqua {
+    color: hsla(165, 100%, 60%, 0.85);
+    animation: none;
+    cursor: pointer;
+}
 @media (max-width: 700px){
 
   header,
