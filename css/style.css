@@ -537,6 +537,15 @@ header.hp7 {
     animation: none;
     cursor: pointer;
 }
+footer {
+    background-color: hsla(165, 100%, 60%, 0.85);
+    color: hsla(0, 100%, 0%, 0.58);
+}
+footer a {
+    color: black;
+    animation: none;
+}
+
 @media (max-width: 700px){
 
   header,
