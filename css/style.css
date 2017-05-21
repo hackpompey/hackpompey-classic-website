@@ -392,6 +392,18 @@ main > section p{
   height: 90px;
 }
 
+
+.hack--7 {
+    color: white;
+    background-color: hsla(187, 80%, 37%, .75);
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.25), hsla(165, 100%, 60%, 1) 100%);
+}
+
+.hack--7 .hack__logo {
+    background-image: url(../img/logo/old/hackpompey--7.png);
+    background-image: url(../img/logo/old/hackpompey--7.svg), none;
+}
+
 .hack--6 {
   color: white;
   background-color: #364596;
@@ -540,14 +552,14 @@ header.hp7 {
 .hack-logo-current {
     width: 100%;
 }
-footer {
+/*footer {
     background-color: hsla(165, 100%, 60%, 0.85);
     color: hsla(0, 100%, 0%, 0.58);
 }
 footer a {
     color: black;
     animation: none;
-}
+}*/
 .eventbrite-widget {
 
 }
