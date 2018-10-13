@@ -19,7 +19,7 @@ body{
   background-attachment: fixed;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
   font-family: 'Varela Round';
   font-weight: 600;
 }
@@ -234,7 +234,7 @@ header .logo{
 }
 
 .logo__hack > path{
-  fill: rgba(255,255,255,.85);
+  fill: rgba(255,255,255,1);
 }
 
 .logo__hack > .logo__hack__h{ animation-delay: -.33s; }
@@ -245,7 +245,7 @@ header .logo{
 .logo__pompey > path{
   fill: none;
 
-  stroke: rgba(255,255,255,.85);
+  stroke: rgba(255,255,255,1);
   stroke-width: 8;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -647,10 +647,6 @@ footer a {
     font-size: 1.5em;
   }
 
-  .social-link{
-    text-align: center;
-  }
-
   .hack-list{
     width: 100%;
     transform: none;
@@ -683,4 +679,17 @@ footer a {
     margin-right: 0;
   }
 
+}
+
+.about,
+.about small
+{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.social-links
+{
+  max-width: 380px;
+  margin: 0 auto;
 }
