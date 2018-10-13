@@ -647,10 +647,6 @@ footer a {
     font-size: 1.5em;
   }
 
-  .social-link{
-    text-align: center;
-  }
-
   .hack-list{
     width: 100%;
     transform: none;
@@ -690,4 +686,10 @@ footer a {
 {
   text-align: center;
   margin-top: 3rem;
+}
+
+.social-links
+{
+  max-width: 380px;
+  margin: 0 auto;
 }
