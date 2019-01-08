@@ -392,6 +392,16 @@ main > section p{
   height: 90px;
 }
 
+.hack--2018 {
+    background-color: hsl(343, 76%, 46%);
+    background: linear-gradient(270deg, hsl(343, 76%, 56%), hsl(343, 76%, 46%));
+    color: #FFF;
+    overflow: hidden;
+}
+
+.hack--2018 .hack__logo {
+    background-image: url(../img/logo/old/hp2018banner.png);
+}
 
 .hack--7 {
     color: white;
