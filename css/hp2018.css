@@ -42,7 +42,7 @@ h2
 .event-details
 {
     padding: 2rem 1rem;
-    text-align: right;
+    text-align: center;
 }
 
 .event-details p
@@ -64,6 +64,11 @@ h2
     text-transform: uppercase;
     font-weight: 900;
     border-bottom: 4px solid white;
+}
+
+.event-details > div
+{
+    margin-bottom: 2rem;
 }
 
 .cta
