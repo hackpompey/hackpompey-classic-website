@@ -22,8 +22,10 @@ h2
     width: 100%;
     padding: 1rem;
     color: #FFF;
-    background: url('../img/event-banner-backgound.png');
+    background-color: #000;
+    background-image: url('../img/leaf-background-small.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .logo
@@ -256,6 +258,11 @@ h2
     {
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+
+    .banner__inner
+    {
+        background-image: url('../img/leaf-background-large.jpg');
     }
 
     .logo
